@@ -12,6 +12,8 @@ import { EducationComponent } from './components/education/education.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,10 +25,12 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     ExperienciaComponent,
     EducationComponent,
     HysComponent,
-    ProyectoComponent
+    ProyectoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({})
   ],
   providers: [],

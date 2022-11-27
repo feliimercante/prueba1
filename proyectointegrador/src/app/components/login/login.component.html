@@ -1,0 +1,8 @@
+<form>
+    <div *ngIf="valido == false">
+        <h1>ESTA MAL!!!!!</h1>
+    </div>
+    <input type="text" [(ngModel)]="usuario" (blur)="onBlurMethod()" placeholder="Usuario">
+    <input type="password" placeholder="Password"/>
+    <button type="submit">Enviar</button>
+</form>
